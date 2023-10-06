@@ -4,110 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./contactus.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
-    <h4>To Apply..</h4>
-    <h5>Fill The Form Below</h5>
+    <h4>To Kick start your career</h4>
+    <br />
+    <h5>Enter your information below</h5>
 
     <form>
-      <label for="First Name">First Name:</label>
-      <input
-        name="first"
-        id="first"
-        type="text"
-        placeholder="firstname"
-        required
-      />
-      <label for="Last Name">Last Name:</label>
-      <input
-        name="last"
-        id="last"
-        type="text"
-        placeholder="Lastname"
-        required
-      />
+      <label for="first name">First Name:</label>
+      <input name="first" id="first" type="text" placeholder="firstname" />
+
+      <label for="last name">Last Name:</label>
+      <input name="last" id="first" type="text" placeholder="lastname" />
       <br />
+      <label>
+        Email:
+        <input name="Email" type="email" placeholder="ypur email" required />
+      </label>
+
+      <label>
+        Password:
+        <input
+          name="Password"
+          type="password"
+          placeholder="ypur password"
+          required
+        />
+      </label>
       <br />
+      <label>
+        Tel:
+        <input name="Tel" type="tel" placeholder="ypur number" />
+      </label>
+
+      <label for="gender"> Gender </label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
 
       <div>
-        <label>
-          Email:
-          <input name="Email" type="email" placeholder="your email" />
-        </label>
-
-        <label>
-          Password:
-          <input name="Paaword" type="password" placeholder="your password" />
-        </label>
+        <label for="hear about"> How did you hear about us </label>
+        <select name="referer" id="hear about">
+          <option value="google">Google</option>
+          <option value="Friend">Friend</option>
+          <option value="advert">Advert</option>
+          <option value="other">Other</option>
+        </select>
       </div>
 
-      <br />
+      <fieldset>
+        <legend>Your Review</legend>
+        <p>
+          Would You Like To Start Your Career?
+          <br />
+          <label>
+            <input type="radio" name="opinion" value="yes" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="opinion" value="no" />
+            No
+          </label>
+          <label>
+            <input type="radio" name="opinion" value="i'll think about it " />
+            I'll Think About It
+          </label>
+        </p>
 
-      <label for="tel">
-        Phone No:
-        <input id="tel" type="tel" placeholder="Your number" />
-      </label>
-
-      <br />
-      <br />
-
-      <div>
-        <label for="male">Male</label>
-        <input id="male" name="gender" type="radio" value="Male" />
-        <label for="female">Female</label>
-        <input id="female" name="gender" type="radio" value="Female" />
-        <label for="other">Other</label>
-        <input id="other" name="gender" type="radio" value="Other" />
-      </div>
-
-      <p>Select Your Prefered Course Choice</p>
-      <label>
-        Frontend Developer
-        <input type="checkbox" />
-      </label>
-      <br />
-      <label>
-        Backend Developer
-        <input type="checkbox" />
-      </label>
-      <br />
-      <label>
-        Software Engineer
-        <input type="checkbox" />
-      </label>
-      <br />
-      <label>
-        Data Scientist
-        <input type="checkbox" />
-      </label>
-      <br />
-      <label>
-        Cloud Computing
-        <input type="checkbox" />
-      </label>
-      <br />
-      <label>
-        UI/UX (Product Designer)
-        <input type="checkbox" />
-      </label>
-      <br />
-      <label>
-        Cyber Security
-        <input type="checkbox" />
-      </label>
-
-      <br />
-      <br />
-
-      <div>
-        <label for="checkbox">I agree to Terms and Condition</label>
-        <input type="checkbox" />
-      </div>
-
-      <input type="submit" />
-      <br />
-      <br />
-      <a href="./aboutus.html">Click Here to Go Back </a>
+        <div class="cmt">
+          <label for="comment"> Comment: </label>
+          <br />
+          <input
+            id="comment"
+            type="text"
+            placeholder="Share your opinion with us"
+          />
+        </div>
+      </fieldset>
     </form>
+    <br />
+
+    <div>
+      <a href="" class="fa-solid fa-phone">Phone</a>
+
+      <br />
+
+      <a href="" class="fab fa-whatsapp">Whatsapp</a>
+
+      <br />
+      <a href="https://www.google.com/" class="fab fa-google">Google</a>
+
+      <br />
+      <a href="" class="fab fa-instagram">Instagram</a>
+
+      <br />
+      <a href="./index.html" class="fa-solid fa-home">Home</a>
+    </div>
   </body>
 </html>
